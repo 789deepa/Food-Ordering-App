@@ -1,3 +1,5 @@
+// EP 01 - Creating React Elements without JSX
+
 const parent = 
     React.createElement("div", {id: "parent"}, 
     [React.createElement("div", {id: "child"},
@@ -12,3 +14,4 @@ const parent =
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
 // console.log(heading)
+
