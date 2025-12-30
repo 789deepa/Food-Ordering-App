@@ -53,12 +53,15 @@
     background-color:#111827b0 ;
     cursor: pointer;
     color: #F9FAFB;
-    height: 300px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: none;
     display: inline-block;
-    border: 1px solid #d2cccc;
+    border: 1px solid #d2cccc; 
     
+    min-height : 280px;
+    height: auto;
+    max-height: none;
+
 }
 
 .res-cards h3, h4 {
@@ -66,6 +69,7 @@
     padding: 5px;
     background: none;
 }
+
 .res-cards:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -81,9 +85,8 @@
 
 .res-cards img {
     width: 100%;
-    height: 100px;
+    height: 140px;
     object-fit: cover;
     border-radius: 8px;
-    display: block;
     margin-bottom: 10px;
 }

@@ -1,9 +1,6 @@
 {
   "devDependencies": {
     "parcel": "^2.16.1"
-<<<<<<< HEAD
-  }
-=======
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -27,5 +24,4 @@
     "url": "https://github.com/789deepa/Namaste-React/issues"
   },
   "homepage": "https://github.com/789deepa/Namaste-React#readme"
->>>>>>> bed229b (Added basic components)
 }
