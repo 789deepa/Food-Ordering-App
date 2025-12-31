@@ -9,9 +9,6 @@ There are two types of dependancies
 ^ (caret) - update minor + patch 18.x.x 
 ~ (tilde) - update patch only 18.2.x
 
-<<<<<<< HEAD
-'Transitive Dependancy' - Parcel dependancy can have its own dependancy, those can hav their own dependancies. (parcel == beast)
-=======
 'Transitive Dependancy' - Parcel dependancy can have its own dependancy, those can hav their own dependancies. (parcel == beast)
 
 whatever we can regenrate- dont have to put it on git (Ex. Node_modules)
@@ -32,4 +29,13 @@ parcel:
 -Differential bundling
 (big round of appolause for Parcel )
 -when we do 'npx parcel build index.html(automatically generates app.js)', have to remove main = app.js from packadge.json file (otherwise error)
->>>>>>> bed229b (Added basic components)
+
+There are two types of exports/imports
+
+-Default export
+export default (component Name)
+import LOGO_URL from "./doc/const" 
+
+-Named export 
+export const LOGO_URL
+import {LOGO_URL} from "./doc/const" 
