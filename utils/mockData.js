@@ -1,11 +1,11 @@
 const resList = [
   {
-    id: "res_102",
+    id: "102",
     name: "Coastal Curry House",
     cuisine: "Goan, Konkan, Seafood",
     description:
       "Coastal Curry House specializes in authentic Goan and Konkan-style seafood.",
-    rating: 4.4,
+    rating: 3.5,
     totalRatings: "9.8K+",
     avgCostForTwo: "₹850 for two",
     deliveryTime: "40 mins",
@@ -19,7 +19,7 @@ const resList = [
   },
 
   {
-    id: "res_103",
+    id: "103",
     name: "Urban Tandoor",
     cuisine: "Punjabi, North Indian, Tandoor",
     description:
@@ -38,7 +38,7 @@ const resList = [
   },
 
   {
-    id: "res_104",
+    id: "104",
     name: "Green Bowl Studio",
     cuisine: "Healthy, Salads, Continental",
     description:

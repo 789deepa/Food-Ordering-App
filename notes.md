@@ -39,3 +39,16 @@ import LOGO_URL from "./doc/const"
 -Named export 
 export const LOGO_URL
 import {LOGO_URL} from "./doc/const" 
+
+# React HOOKS
+(normal js utility functions)
+
+- useState() - gives the array
+- useEffect() 
+
+HOW to create a STATE Variable
+const [listOfResto] = useState([]);                             its equal to 
+let listOfResto = [];
+[] = default value
+ 
+** whenevr a state var updates, react rerenders the component 
