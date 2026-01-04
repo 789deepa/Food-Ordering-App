@@ -58,3 +58,26 @@ we need to use shimmer UI for the time before loading actual data
 
 WHY we use State Variables ?
 cuz using local variables does not changes the UI.. whereas state variables updates the UI immediatly.
+
+## Search & Filter Feature (Client-side filtering)
+
+### What we did
+- Implemented a search and filter feature for restaurant data.
+- Used **two states**:
+  - **Original list** → contains all restaurants (never modified).
+  - **Filtered list** → used for rendering UI.
+- On search or filter action:
+  - Filtered the original list.
+  - Updated the filtered list.
+- UI always renders from the filtered list.
+
+### Why we did it
+- Filtering an already filtered list keeps shrinking data.
+- Search breaks after first filter if original data is lost.
+- Keeping original data untouched allows:
+  - multiple searches
+  - combining filters
+  - easy reset
+
+### Key idea
+**Keep original data safe. Change only the UI data.**

@@ -7,6 +7,7 @@ const Body = () => {
     
     const [resList1, setResList1 ] = useState(resList);
     const [filteredResto, setFilteredResto] = useState(resList);
+    
     const [searchText, setSearchText] = useState("");
      //whenever the state variable updates, react triggers the 'reconcillation' cycle (re-renders)  
 
