@@ -39,7 +39,7 @@ const resList = [
 
   {
     id: "104",
-    name: "Green Bowl Studio",
+    name: "Biryani Store",
     cuisine: "Healthy, Salads, Continental",
     description:
       "Green Bowl Studio focuses on healthy, balanced meals with fresh ingredients.",
