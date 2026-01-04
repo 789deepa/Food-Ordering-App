@@ -96,3 +96,22 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+.shimmer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.shimmer-card {
+    height: 280px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 37%, #f0f0f0 63%);
+    background-size: 400% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.login {
+    height:30px;
+    padding:10px;
+}

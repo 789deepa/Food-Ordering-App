@@ -1,12 +1,25 @@
 import RestoCard from "./RestoCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import resList from "../utils/mockData";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
     
     const [resList1, setResList1 ] = useState(resList)
 
-    return (
+    // //making an API call
+    // useEffect(
+    //     (fetchData)=>{}, 
+    // [])
+    
+    // const fetchData = async () => {
+    //     const data = await fetch ("");
+    //     const json = await data.json();
+    // }
+
+    //conditional rendering 
+
+    return resList1.length === 0 ? <Shimmer/> : (
         <div className="body">
             <div className="search">Search</div>
             <button className="top-search btn" 

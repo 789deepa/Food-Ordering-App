@@ -52,3 +52,9 @@ let listOfResto = [];
 [] = default value
  
 ** whenevr a state var updates, react rerenders the component 
+
+we use OPTIONAL CHAINING here
+we need to use shimmer UI for the time before loading actual data
+
+WHY we use State Variables ?
+cuz using local variables does not changes the UI.. whereas state variables updates the UI immediatly.
