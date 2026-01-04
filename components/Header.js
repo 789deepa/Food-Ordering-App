@@ -1,7 +1,7 @@
 import {useState } from "react";
 
 const Header = () => {
-    const [btnName, setBtnName] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     return (
         <div className = "header">
             <div className = "logo-container">
@@ -16,15 +16,14 @@ const Header = () => {
                     <li>Cart</li>
                     <button className="login"
                     onClick={()=>{
-                        setBtnName(!btnName);
+                        setIsLoggedIn(!isLoggedIn);
                     }}>
-                    {btnName ? "Logout" : "Login"}
+                    {isLoggedIn ? "Logout" : "Login"}
                     </button>
                 </ul>
             </div>
         </div>
     );
 };
-
 
 export default Header;
