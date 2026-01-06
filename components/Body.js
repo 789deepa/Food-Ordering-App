@@ -21,11 +21,11 @@ const Body = () => {
     //     const json = await data.json();
     // }
 
-    //conditional rendering 
+    //conditional rendering  "resList1.length === 0"
 
     // useEffect(()=>{
     //     setFilteredResto(resList1);
-    // }, []);
+    // }, []); 
     return resList1.length === 0 ? <Shimmer/> : (
         <div className="body">
         <div className="filter">
