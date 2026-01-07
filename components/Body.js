@@ -11,21 +11,20 @@ const Body = () => {
     const [searchText, setSearchText] = useState("");
      //whenever the state variable updates, react triggers the 'reconcillation' cycle (re-renders)  
 
-    // //making an API call
-    // useEffect(
-    //     (fetchData)=>{}, 
-    // [])
-    
+    // useEffect(() => {
+    //     fetchData();
+    // }, []);
+
     // const fetchData = async () => {
-    //     const data = await fetch ("");
+    //     const data = await fetch("https://corsproxy.io/?https://namastedev.com/api/v1/listRestaurants");
     //     const json = await data.json();
-    // }
 
-    //conditional rendering  "resList1.length === 0"
+    //     setResList1(json.data);
+    //     setFilteredResto(json.data);
+    // };
 
-    // useEffect(()=>{
-    //     setFilteredResto(resList1);
-    // }, []); 
+    // useState(resList);
+
     return resList1.length === 0 ? <Shimmer/> : (
         <div className="body">
         <div className="filter">
