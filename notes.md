@@ -81,3 +81,20 @@ cuz using local variables does not changes the UI.. whereas state variables upda
 
 ### Key idea
 **Keep original data safe. Change only the UI data.**
+
+## Routes 
+Import createBrowserRouting , RouterProvider
+
+<!-- 
+const appRouter = createBrowserRouter([
+    {
+        path: "/",
+        element: <AppLayout />, 
+    }, 
+    {
+        path: "/about",
+        element: <About/>,
+    }
+])
+root.render(<RouterProvider router = {appRouter} />);
+ -->
