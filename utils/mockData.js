@@ -3,6 +3,7 @@ const resList = [
     id: "102",
     name: "Coastal Curry House",
     cuisine: "Goan, Konkan, Seafood",
+    menu: ["Veg Biryani", "Non-Veg Biryani", "Kolhapuri Biryani"],
     description:
       "Coastal Curry House specializes in authentic Goan and Konkan-style seafood.",
     rating: 3.5,
@@ -25,6 +26,7 @@ const resList = [
     description:
       "Urban Tandoor brings smoky tandoori flavors and classic Punjabi dishes to the city.",
     rating: 4.3,
+    menu: ["Chicken Biryani", "Mutton Biryani"],
     totalRatings: "15K+",
     avgCostForTwo: "₹750 for two",
     deliveryTime: "35 mins",
@@ -45,6 +47,7 @@ const resList = [
       "Green Bowl Studio focuses on healthy, balanced meals with fresh ingredients.",
     rating: 4.7,
     totalRatings: "6.2K+",
+    menu: ["Fried Octopus", "Green Leaves"],
     avgCostForTwo: "₹600 for two",
     deliveryTime: "28 mins",
     distance: "3.2 km",

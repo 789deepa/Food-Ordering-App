@@ -98,3 +98,19 @@ const appRouter = createBrowserRouter([
 ])
 root.render(<RouterProvider router = {appRouter} />);
  -->
+because we wnt to keep one layout, multiple pages..
+we use children routing. 
+
+There are TWO types of routing
+Client- side routing 
+Server side routing
+We are implementing client-side routing. 
+
+Now we want each restaurant to have their own page. so we'll need dynamic routing. 
+I have used useParams hook for the dynamic rounting. Cause I am using mockData as an api.
+You can use useEffect hook to fetch data and useState to make state variables, and can work with real API.
+
+Remember: 'path: "/restaurant/:id" ' colon is used to make routing dynamic. 
+
+To link the restaus we'll use <Link>
+<!-- <Link key={restaurant.id} to={"/restaurant/" + restaurant.id }><RestoCard resData={restaurant} /></Link> -->
