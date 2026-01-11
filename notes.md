@@ -114,3 +114,68 @@ Remember: 'path: "/restaurant/:id" ' colon is used to make routing dynamic.
 
 To link the restaus we'll use <Link>
 <!-- <Link key={restaurant.id} to={"/restaurant/" + restaurant.id }><RestoCard resData={restaurant} /></Link> -->
+
+
+In class-based components, we access the properties(props) using constructor() and super() objects... 
+We create state var using this.state funcn
+we update state var using this.setState funcn
+
+While updating vars, react only renders the variables to update, and rerenders component, without touching other variables. 
+
+## INTERVIEW Q
+Life Cycle of React Class Based component 
+
+Q. How it is mounted(loading) on the web page.? 
+first, constructor of the component is called, then render() is called.
+if Parent component is also class based then, 
+parent constructor, parent render
+child constructor, child render
+
+Class Based component has 'componentDidMount' method
+which is called after render() of the component. 
+constructor -> render -> componentDidMount()
+
+componentDidMount is called to make an API call.
+WHY ?
+
+
+TWO PHASEs - Render phase, Commit phase 
+(if parent has two child components)
+Parent constructor 
+parent render
+
+first child constructor
+first child render
+
+second child constructor 
+second child render
+
+<DOM> gets updated ( commit phase starts)
+
+first child componentDidMount 
+second child componentDidMount
+
+parent componentDidMount 
+
+"Lifecycle with API call"
+<!-- 
+----MOUNTING----
+
+constructor ( dummy )
+render ( dummy )
+  <HTML dummy> 
+component did mount 
+      <API call>
+      <this.setState > -> state var is updated 
+
+----update 
+
+  render (API data)
+  <HTML (new API data)>
+  componentDid Updata 
+   
+  
+  https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+ -->
+
+ useEffect is 'not equivalent' to componentDidMount

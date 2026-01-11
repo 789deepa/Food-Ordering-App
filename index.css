@@ -125,3 +125,23 @@
 .search button {
     cursor: pointer;
 }
+
+.about {
+    padding: 15px;
+    margin: 10px;
+}
+
+.user-class {
+    border: 1px solid rgb(0, 0, 0);
+    padding :10px;
+    margin: 8px;
+}
+
+.button {
+    width: 100px;
+    height: 25px;
+}
+
+.avatar-img {
+    width: 100px;
+}
