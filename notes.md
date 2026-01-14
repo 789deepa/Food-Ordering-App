@@ -115,7 +115,7 @@ Remember: 'path: "/restaurant/:id" ' colon is used to make routing dynamic.
 To link the restaus we'll use <Link>
 <!-- <Link key={restaurant.id} to={"/restaurant/" + restaurant.id }><RestoCard resData={restaurant} /></Link> -->
 
-
+## class based components 
 In class-based components, we access the properties(props) using constructor() and super() objects... 
 We create state var using this.state funcn
 we update state var using this.setState funcn
@@ -179,3 +179,12 @@ component did mount
  -->
 
  useEffect is 'not equivalent' to componentDidMount
+
+## custom HOOKs
+
+we made the custom hook to check if user is online or offline. 
+we used event listener for this. 
+and imported it in body component. 
+<!-- const onlineStatus = useOnline();
+    if(onlineStatus === false) return <h1>Looks like you're offline! </h1>
+ -->

@@ -1,13 +1,11 @@
 import { useParams } from "react-router-dom";
 import resList from "../utils/mockData";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 
 const RestaurantPage = () => {
     const { resId } = useParams();
-
-    const restaurant = resList.find(
-        (res) => res.id === resId
-    );
-
+    const restaurant = useRestaurantMenu(resId) ;
+    
     if(!restaurant){
         return <h2>Restaurant not found.</h2>
     }

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import resList from "../utils/mockData";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnline from "../utils/useOnline";
 
 const Body = () => {
     
@@ -25,6 +26,9 @@ const Body = () => {
     // };
 
     // useState(resList);
+
+    const onlineStatus = useOnline();
+    if(onlineStatus === false) return <h1>Looks like you're offline! </h1>
 
     return resList1.length === 0 ? <Shimmer/> : (
         <div className="body">
