@@ -26,10 +26,6 @@ class About extends Component {
     }
 }
 
-
-
-
-
 // const About = () => {
 //     return (
 //        <div className="about">

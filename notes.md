@@ -188,3 +188,12 @@ and imported it in body component.
 <!-- const onlineStatus = useOnline();
     if(onlineStatus === false) return <h1>Looks like you're offline! </h1>
  -->
+
+## Dynamic Bundling (lazy loading, chunking, on demand loading)
+
+when we have too much components in one section, we need to divide it in some small bundles...which is called Dynamic Bundling.
+we use 'lazy' function given by react.
+while doing this, we'll load whole component using lazy.
+<!-- const Grocery = lazy(()=> import("./components/Grocery"));
+element: <Suspence fallback={<h1>Heloow this is suspence </h1>} ><Grocery/>  </Suspence>,
+ -->
