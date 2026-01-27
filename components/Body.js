@@ -32,23 +32,26 @@ const Body = () => {
     if(onlineStatus === false) return <h1>Looks like you're offline! </h1>
 
     return resList1.length === 0 ? <Shimmer/> : (
-        <div className="body">
-        <div className="filter">
-            <div className="search">
-                <input type="text" className="search-box" value={searchText} 
+        <div className="body px-6 py-4 ">
+        <div className="filter flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-2">
+            {/* <h1 className="text-red-500 text-4xl">WORKING</h1> */}
+
+
+                <input type="text" className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-300 transition w-64" value={searchText} 
                 onChange={(e)=>{
                     setSearchText(e.target.value);
                 }}  />
-                <button onClick={ ()=>{
+                <button onClick={ ()=>{ 
                     const filtered = resList1.filter((res)=>
                         res.name.toLowerCase().includes(searchText.toLowerCase())
                     );
                     
                 setFilteredResto(filtered);
-                }}>search</button>
+                }} className="px-4 py-2 rounded-md bg-pink-400 text-white font-medium hover:bg-pink-500 transition" >search</button>
 
             </div>
-            <button className="top-search btn" 
+            <button className="px-4 py-2 rounded-md border border-pink-400 text-gray-900 font-medium hover:bg-pink-400 hover:text-white transition" 
             onClick={()=>{
                 const filterList = resList1.filter(
                     (res) => res.rating > 4
@@ -56,7 +59,8 @@ const Body = () => {
                 setFilteredResto(
                     resList1.filter((res) => res.rating > 4)
                 );
-            }}
+            }} 
+            
             > Top Rated restaurant</button>
         </div>
             <div className="res-container">

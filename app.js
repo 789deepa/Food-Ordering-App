@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantPage from "./components/RestaurantPage";
 import Shimmer from "./components/Shimmer"; 
+import "./index.css";
+
 
 
 const Grocery = lazy(()=> import("./components/Grocery"));
