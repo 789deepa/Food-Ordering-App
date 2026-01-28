@@ -32,13 +32,13 @@ const Body = () => {
     if(onlineStatus === false) return <h1>Looks like you're offline! </h1>
 
     return resList1.length === 0 ? <Shimmer/> : (
-        <div className="body px-6 py-4 ">
+        <div className="body px-6 py-4">
         <div className="filter flex items-center gap-4 mb-4">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
             {/* <h1 className="text-red-500 text-4xl">WORKING</h1> */}
 
 
-                <input type="text" className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-300 transition w-64" value={searchText} 
+                <input type="text" className="px-4 py-2 rounded-md border border-gray-300  focus:outline-none focus:ring-2 focus:bg-pink-500 transition w-64" value={searchText} 
                 onChange={(e)=>{
                     setSearchText(e.target.value);
                 }}  />
@@ -51,7 +51,7 @@ const Body = () => {
                 }} className="px-4 py-2 rounded-md bg-pink-400 text-white font-medium hover:bg-pink-500 transition" >search</button>
 
             </div>
-            <button className="px-4 py-2 rounded-md border border-pink-400 text-gray-900 font-medium hover:bg-pink-400 hover:text-white transition" 
+            <button className="px-4 py-2 rounded-md border border-pink-400 text-gray-900 font-medium hover:bg-pink-500 hover:text-white transition" 
             onClick={()=>{
                 const filterList = resList1.filter(
                     (res) => res.rating > 4
