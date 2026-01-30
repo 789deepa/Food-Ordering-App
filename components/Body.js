@@ -1,4 +1,4 @@
-import RestoCard from "./RestoCard";
+import RestoCard, { withPromotedLabel } from "./RestoCard";
 import { useState, useEffect } from "react";
 import resList from "../utils/mockData";
 import Shimmer from "./Shimmer";
@@ -12,6 +12,8 @@ const Body = () => {
     const [filteredResto, setFilteredResto] = useState(resList);
     
     const [searchText, setSearchText] = useState("");
+
+    const RestoCardPromoted = withPromotedLabel(RestoCard);
      //whenever the state variable updates, react triggers the 'reconcillation' cycle (re-renders)  
 
     // useEffect(() => {
@@ -66,7 +68,9 @@ const Body = () => {
             <div className="res-container">
                 {/* resto cards */}
                  {   filteredResto.map((restaurant) => (
-                        <Link key={restaurant.id} to={"/restaurant/" + restaurant.id }><RestoCard resData={restaurant} /></Link>
+                        <Link key={restaurant.id} to={"/restaurant/" + restaurant.id }>
+                        restaurant.data.promoted ? <RestoCardPromoted resData={restaurant} /> : <RestoCard resData={restaurant} />
+                        </Link>
                     ))}                 
             </div>
         </div>
