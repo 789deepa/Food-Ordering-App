@@ -23,6 +23,6 @@ const RestaurantPage = () => {
         </div>
         </div>
     )
-}
+};
 
 export default RestaurantPage;

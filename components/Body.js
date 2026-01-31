@@ -67,11 +67,14 @@ const Body = () => {
         </div>
             <div className="res-container">
                 {/* resto cards */}
-                 {   filteredResto.map((restaurant) => (
+                 {   filteredResto.map((restaurant) => { 
+                    console.log(restaurant.name, restaurant.isPromoted); 
+                    return (
                         <Link key={restaurant.id} to={"/restaurant/" + restaurant.id }>
-                        restaurant.data.promoted ? <RestoCardPromoted resData={restaurant} /> : <RestoCard resData={restaurant} />
+                        {restaurant.isPromoted ? (<RestoCardPromoted resData={restaurant} />) : (<RestoCard resData={restaurant} />)}
                         </Link>
-                    ))}                 
+                    );
+                    })}                 
             </div>
         </div>
     );
