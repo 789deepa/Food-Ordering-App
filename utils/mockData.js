@@ -3,7 +3,7 @@ const resList = [
     id: "102",
     name: "Coastal Curry House",
     cuisine: "Goan, Konkan, Seafood",
-     menu: [
+    menu: [
     {
       title: "Butter Chicken",
       price: 320,
@@ -15,7 +15,7 @@ const resList = [
       desc: "Soft naan topped with garlic and butter"
     }
   ],
-  offers: [
+    offer: [
     {
       title: "Buy 1 Get 1",
       desc: "Applicable on selected dishes"
