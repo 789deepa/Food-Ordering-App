@@ -13,7 +13,7 @@ const RestaurantPage = () => {
     }
     
     return (
-        <div className="min-h-screen flex justify-center py-12" >
+        <div className="min-h-screen flex justify-center py-12 bg-[#FAFAFA]" >
             <div className="max-w-3xl w-5/12 px-6">
                 <RestaurantHeader name={restaurant.name} />
                 <RestaurantAccordion restaurant={restaurant} />

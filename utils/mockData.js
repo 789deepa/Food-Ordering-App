@@ -1,8 +1,15 @@
+const IMAGES = {
+  coastal: "https://images.unsplash.com/photo-1567337710282-00832b415979?w=508&h=320&fit=crop",
+  tandoor: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=508&h=320&fit=crop",
+  biryani: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=508&h=320&fit=crop",
+};
+
 const resList = [
   {
     id: "102",
     name: "Coastal Curry House",
     cuisine: "Goan, Konkan, Seafood",
+    imageId: IMAGES.coastal,
     menu: [
     {
       title: "Butter Chicken",
@@ -30,7 +37,6 @@ const resList = [
     distance: "7.1 km",
     isPureVeg: false,
     isOpen: true,
-    imageId: "/img/coastal-curry.jpg",
     offers: ["20% OFF up to ₹120"],
     tags: ["Seafood Special", "Authentic Coastal", "Spicy"],
     outlet: "Dharampeth, Nagpur"
@@ -67,7 +73,7 @@ const resList = [
     distance: "5.4 km",
     isPureVeg: false,
     isOpen: true,
-    imageId: "/img/urban-tandoor.jpg",
+    imageId: IMAGES.tandoor,
     offers: ["Flat ₹100 OFF on orders above ₹399"],
     tags: ["Tandoori", "Comfort Food", "Best Sellers"],
     outlet: "Ramdaspeth, Nagpur"
@@ -92,8 +98,8 @@ const resList = [
       price: 180,
       desc: "Yellow dal tempered with spices"
     }
-  ],
-  offers: [
+    ],
+    offers: [
     {
       title: "20% OFF",
       desc: "Valid on orders above ₹499"
@@ -104,7 +110,7 @@ const resList = [
     isPureVeg: true,
     isOpen: true,
     isPromoted: true,
-    imageId: "/img/green-bowl.jpg",
+    imageId: IMAGES.biryani,
     offers: ["Free smoothie on orders above ₹499"],
     tags: ["Healthy Eats", "Protein Rich", "Low Cal"],
     outlet: "IT Park, Nagpur"

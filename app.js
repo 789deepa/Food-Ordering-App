@@ -16,7 +16,7 @@ const Grocery = lazy(()=> import("./components/Grocery"));
 
 const AppLayout = () => {
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-[#0f0f0f]">
             <Header/>
             <Outlet />
         </div>                
