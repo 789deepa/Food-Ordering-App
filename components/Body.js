@@ -35,7 +35,7 @@ const Body = () => {
 
     return resList1.length === 0 ? <Shimmer/> : (
         <div className="body">
-            <section className="bg-white border-b border-[#FFD4B3] px-10 pt-10 pb-8">
+            <section className=" border-b border-[#ffd1ae] px-10 pt-10 pb-8">
                 <p className="text-xs font-medium text-[#FF6B35] uppercase tracking-widest mb-2">
                     Pune, Maharashtra
                 </p>
@@ -66,7 +66,7 @@ const Body = () => {
                         Search
                     </button>
                     <button 
-                        className="border border-[#E8E6E1] bg-white text-[#1a1a1a] px-4 py-2.5 rounded-xl text-sm font-medium hover:border-[#FF6B35] hover:text-[#FF6B35] hover:bg-[#FFF5EF] transition" 
+                        className="border border-[#E8E6E1] text-[#1a1a1a] px-4 py-2.5 rounded-xl text-sm font-medium hover:border-[#FF6B35] hover:text-[#FF6B35] hover:bg-[#FFF5EF] transition" 
                         onClick={()=>{
                             const filterList = resList1.filter(
                                 (res) => res.rating > 4
@@ -79,10 +79,10 @@ const Body = () => {
                 </div>
             </section>
 
-            <div className="px-10 py-8 bg-[#FAFAFA]">
+            <div className="px-10 py-8">
                 <div className="flex justify-between items-center mb-6">
                     <h2 style={{fontFamily:"'Playfair Display',serif"}} className="text-xl text-[#1a1a1a]">Restaurants near you</h2>
-                    <span className="text-sm text-[#999999]">{filteredResto.length} places</span>
+                    <span className="text-sm text-[#ffffff]">{filteredResto.length} places</span>
                 </div>
                 <div className="grid gap-5" style={{gridTemplateColumns:"repeat(auto-fill, minmax(240px, 1fr))"}}>
                     {filteredResto.map((restaurant) => { 

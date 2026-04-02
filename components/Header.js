@@ -6,11 +6,11 @@ const Header = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const onlineStatus = useOnline();
     return (
-        <div className="bg-white border-b border-[#FFD4B3] h-16 flex items-center justify-between px-10 sticky top-0 z-50">
+        <div className=" border-b border-[#FFD4B3] h-16 flex items-center justify-between px-10 sticky top-0 z-50">
             <div className="flex items-center gap-2">
                 <div className="w-9 h-9 bg-[#FF6B35] rounded-xl flex items-center justify-center text-white font-semibold text-lg">N</div>
                 <span className="text-xl text-[#1a1a1a]" style={{fontFamily:"'Playfair Display',serif"}}>
-                    Namaste<span className="text-[#FF6B35]">Food</span>
+                    Namaste<span className="text-[#ff6a34]">Food</span>
                 </span>
             </div>
             <div className="nav-items flex gap-8">
