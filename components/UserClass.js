@@ -38,17 +38,15 @@ class UserClass extends React.Component {
         console.log(" will unmount")
     }
 
-    render() {  //Never update State var directly 
+    render() {  //Never update State var directly
 
         const {name, login, avatar_url} = this.state.userInfo;
-        
+
         return (
-            <div className="user-class">
-            {/* <button className="button" onClick={this.increment}>Count {this.state.count}</button> */}
-            <img className="avatar-img" src={avatar_url} /> 
-            <h1>Hellow This is {name}</h1>
-            <h3>My username is "{login}" </h3>
-            
+            <div className="user-class p-6 text-center">
+            <img className="avatar-img w-24 h-24 rounded-full mx-auto mb-4 border-2 border-brand-accent" src={avatar_url} />
+            <h1 className="text-xl font-semibold text-brand-text mb-2">Hello, This is <span className="text-brand-accent">{name}</span></h1>
+            <h3 className="text-brand-text-secondary">My username is <span className="text-brand-accent font-medium">"{login}"</span></h3>
         </div>
         )
     }

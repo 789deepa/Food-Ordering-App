@@ -2,8 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Dark Mode Base Styles */
+* {
+    @apply transition-colors duration-200;
+}
+
 body {
-    background-color: #FAFAFA;
+    background-color: #0a0a0a;
     font-family: 'DM Sans', sans-serif;
-    color: #1A1A1A;
+    color: #f5f5f5;
+}
+
+html, body, #root {
+    height: 100%;
+    background: #0a0a0a;
+}
+
+/* Custom utility classes */
+.text-brand {
+    @apply text-brand-text;
+}
+
+.text-secondary {
+    @apply text-brand-text-secondary;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+    background-color: #00d4ff;
+    color: #0a0a0a;
 }

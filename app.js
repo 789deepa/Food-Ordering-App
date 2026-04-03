@@ -16,11 +16,11 @@ const Grocery = lazy(()=> import("./components/Grocery"));
 
 const AppLayout = () => {
     return (
-        <div className="min-h-screen bg-[#0f0f0f]">
+        <div className="min-h-screen bg-brand-dark">
             <Header/>
             <Outlet />
-        </div>                
-    );    
+        </div>
+    );
 };
 
 const appRouter = createBrowserRouter([
